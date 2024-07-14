@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /*
+            1. Use a more-intuitive box-sizing model.
+            */
+            *, *::before, *::after {
+            box-sizing: border-box;
+            }
+            /*
+            2. Remove default margin
+            */
+            * {
+            margin: 0;
+            padding:0;
+            }
+            /*
+            Typographic tweaks!
+            3. Add accessible line-height
+            4. Improve text rendering
+            */
+            body {
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+            }
+            /*
+            5. Improve media defaults
+            */
+            img, picture, video, canvas, svg {
+            display: block;
+            max-width: 100%;
+            }
+            /*
+            6. Remove built-in form typography styles
+            */
+            input, button, textarea, select {
+            font: inherit;
+            }
+            /*
+            7. Avoid text overflows
+            */
+            p, h1, h2, h3, h4, h5, h6 {
+            overflow-wrap: break-word;
+            }
+            /*
+            8. Create a root stacking context
+            */
+            #root, #__next {
+            isolation: isolate;
+            }
+
+
+
+
+
+
+            #a1 {
+                background-color: blue;
+            }
+
+            #a2 {
+                font-size: 16px;
+                background-color: green;
+            }
+
+            .nav-item {
+                font-size: 16px;
+                background-color: red;
+                display:inline-block;
+                padding:64px;
+                border-color:green;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="a1">
+            <div id="a2">
+                <span class="nav-item">Home</span>
+                <span class="nav-item">Pricing</span>
+                <span class="nav-item">About</span>
+                <span class="nav-item">Contact</span>
+            </div>
+        </div>
+    </body>
+</html>

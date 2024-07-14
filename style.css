@@ -1,79 +1,117 @@
 * {
-    margin:0;
     padding:0;
-    border-width:0;
-    border:0;
+    margin:0;
 }
 
 body {
-    background-color: #690E9E;
-    color: #f4f4f4;
-
-    font: normal 1em Arial, Helvetica, sans-serif;
-    text-shadow: 0 0 20px red;
+    background-color:#f4f4f4;
+    color:#555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+    line-height:1.6em;
+    margin:0;
 }
 
 .container {
     width:80%;
     margin:auto;
+    overflow:hidden;
 }
 
-h1 {
-    margin: 16px;
-
-    font-size: 96px;
-    font-style:italic;
-    font-weight: 1000;
-    text-decoration: underline;
-    letter-spacing: .5em;
+#main-header{
+    background-color:coral;
+    color:white;
 }
 
-h2 {
-    margin: 0px 32px 16px 16px;
-
-    font-size: 36px;
-    font-style:italic;
-    font-weight: 1000;
-    text-decoration: underline;
-    letter-spacing: .3em;
+#main-header h1 {
+    padding: 24px 0;
 }
 
-p {
-    margin: 16px;
-
-    line-height:1.5em;
-}
-
-.card {
-    margin: 32px;
-    padding: 16px;
-
-    background-color: #8C71D3;
-
-    border-radius: 1em;
-    box-shadow: 0 0 2em #0005;
-}
-
-.my-form {
-    padding: 16px;
-}
-
-.my-form .form-group {
-    padding-bottom:15px;
-}
-
-.my-form label {
-    display:block;
-    padding-bottom: 4px;
-}
-.my-form input[type="text"], input[type="textarea"] {
-    padding:8px;
-    width:100%;
-}
-
-.button {
+#navbar {
     background-color: #333;
+    color:white;
+    font-size:0;
+    padding:0;
+    list-style:none;
+    position:relative;
+    
+    right: 16px;
+}
+
+#navbar a {
+    margin:6px 0;
+    padding:10px 16px;
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    display: inline-block;
+    border-radius: 1000px;
+}
+
+#navbar a:hover {
+    background-color: #555;
+}
+
+#navbar a:active {
+    background-color: #777;
+}
+
+#showcase {
+    background-image:url('background.avif');
+    background-position:center right;
+    min-height:300px;
+    margin-bottom:30px;
+    text-align: center;
+}
+
+#showcase h1 {
+    color:whote;
+    font-size:50px;
+    line-height:1.6em;
+    padding-top:30px;
+}
+
+#main {
+    float:left;
+    width:70%;
+    padding:0;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+
+#main h1 {
+    margin-bottom: 16px;
+}
+
+#sidebar {
+    float:right;
+    width:30%;
+    background: #333;
+    color: #fff;
+    padding:30px;
+    padding-top:25px;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+}
+
+#main-footer {
+    background:#333;
     color:#fff;
-    padding:16px 16px;
-    width:100%;
+    text-align:center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+@media(max-width:800px) {
+    #main {
+        width:100%;
+        float:none;
+    }
+    #sidebar {
+        width:100%;
+        float:none;
+    }
 }
